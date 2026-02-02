@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine Question</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: pink;
+      text-align: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    h1 {
+      margin-top: 100px;
+    }
+    button {
+      font-size: 20px;
+      padding: 15px 30px;
+      margin: 20px;
+      cursor: pointer;
+    }
+    #noBtn {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Will you go on a Valentine’s date with me? ❤️</h1>
+
+<button onclick="window.location.href='game.html'">YES 💖</button>
+<button id="noBtn">NO 😈</button>
+
+<script>
+  const noBtn = document.getElementById("noBtn");
+
+  noBtn.addEventListener("mouseover", () => {
+    const x = Math.random() * 80;
+    const y = Math.random() * 80;
+    noBtn.style.left = x + "vw";
+    noBtn.style.top = y + "vh";
+  });
+</script>
+
+</body>
+</html>
