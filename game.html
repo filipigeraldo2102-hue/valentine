@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Choose Wisely</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #fff0f5;
+      text-align: center;
+    }
+    img {
+      width: 120px;
+      margin: 15px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+<h1>Which man do you want to go on a date with? 💕</h1>
+
+<img src="guy1.jpg" onclick="wrong()">
+<img src="guy2.jpg" onclick="wrong()">
+<img src="guy3.jpg" onclick="wrong()">
+<img src="guy4.jpg" onclick="wrong()">
+<img src="guy5.jpg" onclick="wrong()">
+<img src="me.jpg" onclick="right()">
+
+<script>
+  function wrong() {
+    alert("Hmm… try again 😏");
+  }
+  function right() {
+    window.location.href = "final.html";
+  }
+</script>
+
+</body>
+</html>
